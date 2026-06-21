@@ -11027,3 +11027,27 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+/* Diagonal image used in parcours/mental.html */
+.img-diag-right{
+  width:320px;
+  max-width:40%;
+  float:right;
+  transform:rotate(12deg);
+  margin-left:1rem;
+  margin-top:-40px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.25);
+}
+
+@media (max-width:767.98px){
+  .img-diag-right{display:none !important;}
+}
+
+/* Ensure Strava embeds and product images keep visible height on small screens */
+.product-item .product-item-img {
+  min-height: 240px;
+}
+.strava-embeds-placeholder, .strava-embed-placeholder {
+  width: 100% !important;
+  min-height: 260px;
+}
